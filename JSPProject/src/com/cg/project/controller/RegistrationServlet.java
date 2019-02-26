@@ -2,6 +2,8 @@ package com.cg.project.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,10 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cg.project.beans.Associate;
 
-@WebServlet("/register")
+@WebServlet("/registration")
 public class RegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int associateId = Integer.parseInt(request.getParameter("associateId"));
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
 		long accountNo = Long.parseLong(request.getParameter("accountNo"));
@@ -27,7 +30,7 @@ public class RegistrationServlet extends HttpServlet {
 		String country = request.getParameter("country");
 		int pincode = Integer.parseInt(request.getParameter("pincode"));
 		long contact = Long.parseLong(request.getParameter("contact"));
-		String[] degree = request.getParameterValues("degree");
+		String [] degree = request.getParameterValues("degree");
 		String stream = request.getParameter("stream");
 		PrintWriter out = response.getWriter();
 		out.println("<html><body><div align='center' color = green>");

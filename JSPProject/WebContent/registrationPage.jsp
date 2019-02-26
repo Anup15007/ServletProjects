@@ -8,8 +8,13 @@
 <h3 align="center">Registration Page</h3><br>
 	<script type="text/javascript" src="js/validation.js">
 	</script>
-	<form id="registerForm"  action ="register" method = "post" onsubmit="validateRegisterForm()">
+	<form id="registerForm"  action ="registration" method = "post" onsubmit="validateRegisterForm()">
 			<table align="center"   border =1>
+			<tr>
+					<td>Associate ID:</td>
+					<td><input type="text" name="associateId"><br></td>
+					<br>
+				</tr>
 				<tr>
 					<td>First Name:</td>
 					<td><input type="text" name="firstName"><br></td>
@@ -18,6 +23,11 @@
 				<tr>
 					<td>Last Name:</td>
 					<td><input type="text" name="lastName"><br></td>
+					<br>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="text" name="password"><br></td>
 					<br>
 				</tr>
 				<tr>
