@@ -13,8 +13,8 @@
 		<div id="msg"></div>
 		<br><br>
 		<a href="hello" >Hello</a><br><br>
-		<a href="loginPage.html" >Login</a><br><br>
-		<a href="registrationPage.html">Registration</a><br><br>
+		<a href="loginPage.jsp" >Login</a><br><br>
+		<a href="registrationPage.jsp">Registration</a><br><br>
 	</div>
 </body>
 </html>
